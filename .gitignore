@@ -1,0 +1,13 @@
+env.*.json
+!env.template.json
+.env
+
+node_modules
+.DS_STORE
+
+build
+dist
+.dist
+.build
+
+log
