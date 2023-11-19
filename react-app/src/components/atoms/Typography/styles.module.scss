@@ -1,0 +1,15 @@
+%common {
+  margin: 0 ; 
+  padding: 0; 
+}
+
+.h6 {
+  @extend %common;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.paragraph {
+  @extend %common;
+  font-size: 14px;
+}

@@ -1,4 +1,5 @@
 require('module-alias/register')
+const cors = require('cors')
 const express = require('express');
 const path = require('path');
 const enviroment = process.env.NODE_ENV;
@@ -10,6 +11,7 @@ Object.entries(config).forEach(([key, value]) => {
   process.env[key] = value;
 });
 
+app.use(cors())
 const apiRouter = require('./routes');
 app.use('/api', apiRouter);
 app.use(express.static('react-app/dist'));
